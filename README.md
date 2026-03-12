@@ -1,28 +1,29 @@
-# boundless-flow.github.io
+# Boundless Flow Docs Site
 
-Official documentation & landing site for **Boundless Flow (无界音流)**.
+Documentation and landing pages for **Boundless Flow (无界音流)**.
 
-🌐 **Live site:** https://boundless-flow.github.io/
+🌐 Live site: https://boundless-flow.github.io/
 
-## Repo structure
+## Project Overview
 
-```
-.
-├── index.html                    # Landing page (中文)
-├── index-en.html                 # Landing page (English)
-├── welcome.html                  # Docs – What is Boundless Flow? (中文)
-├── welcome-en.html               # Docs – What is Boundless Flow? (EN)
-├── stt.html / stt-en.html        # Real-time STT
-├── translation.html / -en.html   # Real-time Translation
-├── proofreading-summary.*html    # AI Proofreading & Summary
-├── tts-voice-cloning.*html       # TTS & Voice Cloning
-├── appendix.html / -en.html      # Appendix / Beginner guide
-├── style.css                     # Shared stylesheet
-├── images/                       # Screenshots & illustrations
-│   ├── banner.png
-│   ├── img1.png … img9.png
-└── .nojekyll                     # Disable Jekyll processing
-```
+This folder contains the static documentation site for Boundless Flow, including:
+
+- product landing pages in Chinese and English
+- end-user guides for STT, translation, proofreading, summaries, and TTS
+- appendix pages for installation, model downloads, and beginner-friendly setup
+- shared screenshots and visual assets used across the site
+
+## Main Pages
+
+- `index.html` / `index-en.html`: product landing pages
+- `welcome.html` / `welcome-en.html`: what Boundless Flow is and how to get started
+- `stt.html` / `stt-en.html`: real-time STT and native-stt offline transcription
+- `translation.html` / `translation-en.html`: real-time translation workflow
+- `proofreading-summary.html` / `proofreading-summary-en.html`: AI proofreading and summary features
+- `tts-voice-cloning.html` / `tts-voice-cloning-en.html`: TTS and voice cloning
+- `appendix.html` / `appendix-en.html`: installation and configuration appendix
+- `style.css`: shared site stylesheet
+- `images/`: screenshots, banners, and product illustrations
 
 ## Deploy to GitHub Pages
 
@@ -45,10 +46,9 @@ Official documentation & landing site for **Boundless Flow (无界音流)**.
 
 The site is live in ~1 minute.
 
-## Syncing with the plugin source
+## Syncing with the Plugin Source
 
-Source docs live in  
-`ai-whiteboard-next/plugins/boundless-flow/docs/`  
+Source docs live in `ai-whiteboard-next/plugins/boundless-flow/docs/`.
 
 After editing docs there, re-sync with:
 ```powershell
@@ -56,6 +56,10 @@ Copy-Item -Path "plugins\boundless-flow\docs\*" `
           -Destination "..\..\boundless-flow.github.io\" `
           -Recurse -Force
 ```
+
+## Relationship to Main Project
+
+This site is maintained from the Boundless Flow plugin workspace and should stay aligned with the main project README, screenshots, and feature set.
 
 ## License
 
